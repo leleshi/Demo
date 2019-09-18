@@ -20,12 +20,12 @@ public class ApplicationStartQuartzJobListener implements ApplicationListener<Co
      */
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        try {
-            quartzScheduler.startJob();
-            System.out.println("任务已经启动...");
-        } catch (SchedulerException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            quartzScheduler.startJob();
+//            System.out.println("任务已经启动...");
+//        } catch (SchedulerException e) {
+//            e.printStackTrace();
+//        }
     }
 
     /**

@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.LongStream;
 
 /**
  * 这里并没有采用restful风格 只是简单封装了一下api
@@ -105,6 +107,12 @@ public class QuartzApiController {
         } catch (SchedulerException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        double d = 1.03;
+        double a = 0.45;
+        System.out.println(d-a);
     }
 
 }
